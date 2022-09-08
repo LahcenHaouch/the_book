@@ -1,6 +1,8 @@
+mod christmas_carol;
 mod fibonacci;
 mod temperature;
 
+use christmas_carol::twelve_days_of_christmas;
 use fibonacci::nth_fibonacci;
 use temperature::{convert_to_celsius, convert_to_fahrenheit};
 
@@ -19,4 +21,5 @@ fn main() {
     let fib = nth_fibonacci(num);
 
     println!("{num} -> fib -> {fib}");
+    twelve_days_of_christmas();
 }
